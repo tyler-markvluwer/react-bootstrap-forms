@@ -1,2 +1,2 @@
-# NewLifeRegisterApp
-A mobile application form for registering new attendee information.
+# Beautiful form app
+A mobile application form.
