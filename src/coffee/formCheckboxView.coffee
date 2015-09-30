@@ -12,6 +12,14 @@ formCheckboxView = React.createClass
     #################################
 
     render: ->
-        
+        div
+            className: 'checkbox'
+
+            label
+                for: @props.id
+                input
+                    type: 'checkbox'
+                    id: @props.id
+                    @props.innerText
 
 module.exports = React.createFactory(formCheckboxView)

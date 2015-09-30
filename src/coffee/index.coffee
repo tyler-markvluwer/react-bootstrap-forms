@@ -20,7 +20,7 @@ $(document).css('background-image', 'url(' + imageUrl + ')')
 React.render(
     CenteredImage
         src: 'res/taco_bell_bw.jpg'
-        scale: '30%'        
+        scale: '20%'        
     document.getElementById('logo-view-mount') # where to mount it
 )
 

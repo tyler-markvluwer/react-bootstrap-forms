@@ -12,6 +12,17 @@ formGroupView = React.createClass
     #################################
 
     render: ->
-        
+        div
+            className: 'form-group'
+
+            label
+                for: @props.id
+                @props.innerText
+            input
+                type: @props.type
+                className: 'form-control'
+                id: @props.id
+                placeholder: "Enter " + @props.innerText[0..-2] + " Here"
+
 
 module.exports = React.createFactory(formGroupView)

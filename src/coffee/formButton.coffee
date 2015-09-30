@@ -4,12 +4,17 @@ React = require('react')
 button = React.createFactory('button')
 
 # View Class
-formCheckboxView = React.createClass
+formButtonView = React.createClass
 	#################################
     #       React Functions
     #################################
 
     render: ->
-        
+        button
+            id: @props.id
+            className: 'btn btn-default'
+            type: 'button'
+            onClick: @props.onClick
+            @props.innerText
 
-module.exports = React.createFactory(formCheckboxView)
+module.exports = React.createFactory(formButtonView)
